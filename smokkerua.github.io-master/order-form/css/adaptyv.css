@@ -1,0 +1,221 @@
+@media only screen and (max-width : 1500px) {
+    .btn-hide-lp {
+        min-width: 180px;
+    }
+}
+@media only screen and (max-width : 1250px) {
+    .second-screen.statistick-on .settings {
+        margin: 3px 0;
+    }
+    .lendings__box {
+        padding: 2px 0px;
+    }
+    .second-screen.statistick-on .lendings__box {
+        padding-left: 5px;
+    }
+    .switch {
+        margin-right: 5px;
+    }
+    .percent {
+        margin-right: 5px;
+    }
+    .metrika-title {
+        padding: 3px;
+        margin-bottom: 3px;
+        font-weight: 400;
+    }
+    .metrika-subtitle {
+        padding: 3px;
+        margin: 1px;
+        font-weight: 500;
+    }
+    .body {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .btn-addlend {
+        margin: 0 5px;
+    }
+    .overlay .modal-lendind {
+        width: 900px;
+    }
+    .lendind__box {
+        padding-left: 7px;
+        text-align: left;
+    }
+}
+@media only screen and (max-width : 1050px) {
+    body {
+        padding: 10px 5px;
+    }
+    .button-group {
+        flex-direction: column;  
+    }
+    .selected-group { 
+        margin-bottom: 15px;
+        justify-content: flex-end;
+    }
+    .button-right {
+        
+        width: 100%;
+    }
+    .input__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-addlend {
+        padding: 3px 6px;
+        font-size: 13px;
+        font-weight: 500;     
+    }
+    .top__box .btn-setting {
+        padding: 3px 6px;
+        font-size: 13px;
+        font-weight: 500; 
+    }
+    .button-group {
+        align-items: flex-end;
+    }
+    .btn-main, .btn-flow, .button-right  {
+        height: 44px;
+    }
+    .selected-group {
+        height: 37px;
+    }
+}
+
+@media only screen and (max-width : 991px) {
+    .lendings__container {
+        font-size: 13px;
+    }
+    .col-main {
+        padding: 0 10px;
+        padding-right: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        min-width: 120px;
+    }
+    .second-screen.statistick-on .col-main {
+        padding-left: 20px;
+        min-width: 120px;
+    }
+    .second-screen .summ-cuntry-offer {
+        width: 120px;
+        height: 30px;
+    }
+    .statistics__box {
+        width: 80px;
+    }
+    .metrika-col {
+        width: 80px;
+    }
+    .second-screen.statistick-on .settings {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .second-screen.statistick-on .btn-addlend {
+        margin: 0;
+    }
+    .second-screen.statistick-on .settings-title {
+        margin: 0px;
+        margin-bottom: 3px;
+    }
+    .metrika-col {
+        border-right: 1px solid #FAFAFA;
+    }
+    .second-screen.statistick-on .lendings__box-settings {
+        flex-direction: row;
+        align-items: center;
+    }
+    .second-screen.statistick-on .lendings__box-settings .settings-title {
+        margin: 0 10px;
+    }
+    .no-wrap {
+        flex-wrap: nowrap;
+    }
+    .overlay .modal-lendind {
+        width: 750px;
+    }
+    .main-popap .metrika-col {
+        width: 80px;
+    }
+    .lendind__metrika-col {
+        width: 80px;
+        padding: 3px 2px;
+    }
+    .overlay  .modal {
+        width: 750px;
+    }
+    .overlay .modal-offer {
+        width: 400px;
+    }
+    .mainline {
+        padding: 5px 10px;
+        padding-left: 5px;
+    }
+    .selected__container {
+        min-height: 500px;
+    }
+}
+@media only screen and (max-width : 768px) { 
+    .overlay .modal {
+        top: 10px;
+        transform: translateX(-50%);
+		width: 98%;
+		height: 98%;
+		overflow: scroll;
+    }
+
+    .input-top{
+        width: 100%;
+    }
+    .input-box {
+        padding: 0 7px;
+    }
+    .body {
+        width: 768px;
+    }
+    .overlay {
+        display: none;
+        padding: 0;
+    }
+    .overlay.open {
+        opacity: 1;
+        display: block;
+        z-index: 100;
+        height: 100%;
+        min-height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
