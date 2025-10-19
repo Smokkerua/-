@@ -22,7 +22,47 @@ document.addEventListener("DOMContentLoaded", function() {
             // 3. Перевіряємо, чи панель ВЖЕ відкрита (чи є у неї max-height)
             if (panel.style.maxHeight) {
                 // Якщо так - закриваємо її (ставимо max-height = null)
-                panel.style.maxHeight = null;
+                panel.style.maxHeight = null;a// Чекаємо, поки весь HTML-документ завантажиться
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // Знаходимо нашу форму за її ID
+    const contactForm = document.getElementById("main-contact-form");
+
+    // Додаємо "слухача" події "submit" (відправка форми)
+    contactForm.addEventListener("submit", function(event) {
+        
+        // Зупиняємо стандартну поведінку (щоб сторінка не перезавантажувалась)
+        event.preventDefault();
+
+        // Отримуємо значення з полів
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // Проста перевірка, чи поля не порожні
+        if (name === "" || email === "" || message === "") {
+            alert("Будь ласка, заповніть усі поля.");
+            return; // Зупиняємо виконання, якщо є помилка
+        }
+
+        // --- Важливе зауваження! ---
+        // Цей код лише перевіряє форму на стороні клієнта.
+        // Для реальної відправки email вам знадобиться серверний скрипт
+        // (наприклад, на PHP, Node.js) або сторонній сервіс (наприклад, Formspree, Netlify Forms).
+        // Оскільки це простий HTML/CSS/JS сайт, ми просто імітуємо успішну відправку.
+        
+        console.log("Дані форми готові до відправки:");
+        console.log("Ім'я:", name);
+        console.log("Email:", email);
+        console.log("Повідомлення:", message);
+
+        // Повідомляємо користувача про успіх
+        alert("Дякуємо за ваше звернення! Ми зв'яжемося з вами найближчим часом.");
+
+        // Очищуємо поля форми після "відправки"
+        contactForm.reset();
+    });
+});
             } else {
                 // Якщо ні - відкриваємо.
                 // Встановлюємо max-height рівний реальній висоті вмісту (scrollHeight)
